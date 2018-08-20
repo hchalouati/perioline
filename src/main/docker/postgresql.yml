@@ -1,0 +1,11 @@
+version: '2'
+services:
+    perioline-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/perioline/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=perioline
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
