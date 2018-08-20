@@ -12,6 +12,34 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import patient, {
+  PatientState
+} from 'app/entities/patient/patient.reducer';
+// prettier-ignore
+import paymentDetails, {
+  PaymentDetailsState
+} from 'app/entities/payment-details/payment-details.reducer';
+// prettier-ignore
+import invoice, {
+  InvoiceState
+} from 'app/entities/invoice/invoice.reducer';
+// prettier-ignore
+import cabinet, {
+  CabinetState
+} from 'app/entities/cabinet/cabinet.reducer';
+// prettier-ignore
+import practitioner, {
+  PractitionerState
+} from 'app/entities/practitioner/practitioner.reducer';
+// prettier-ignore
+import contact, {
+  ContactState
+} from 'app/entities/contact/contact.reducer';
+// prettier-ignore
+import charting, {
+  ChartingState
+} from 'app/entities/charting/charting.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +53,13 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly patient: PatientState;
+  readonly paymentDetails: PaymentDetailsState;
+  readonly invoice: InvoiceState;
+  readonly cabinet: CabinetState;
+  readonly practitioner: PractitionerState;
+  readonly contact: ContactState;
+  readonly charting: ChartingState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +75,13 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  patient,
+  paymentDetails,
+  invoice,
+  cabinet,
+  practitioner,
+  contact,
+  charting,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

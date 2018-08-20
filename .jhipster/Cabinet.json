@@ -1,0 +1,71 @@
+{
+    "name": "Cabinet",
+    "fields": [
+        {
+            "fieldName": "orgId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "activity",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "website",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "logo",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "cabinet",
+            "otherEntityName": "contact",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "cabinet"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "cabinet",
+            "otherEntityName": "invoice",
+            "otherEntityRelationshipName": "cabinet"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "cabinet",
+            "otherEntityName": "practitioner",
+            "otherEntityRelationshipName": "cabinet"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "cabinet",
+            "otherEntityName": "paymentDetails",
+            "otherEntityRelationshipName": "cabinet"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "practitioner",
+            "relationshipName": "cabinet",
+            "otherEntityName": "practitioner",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20180820162023",
+    "entityTableName": "cabinet",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

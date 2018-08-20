@@ -1,0 +1,29 @@
+
+{
+    "periolineApp": {
+        "paymentDetails" : {
+            "home": {
+                "title": "PaymentDetails",
+                "createLabel": "Créer un nouveau Payment Details",
+                "createOrEditLabel": "Créer ou éditer un Payment Details"
+            },
+            "created": "Un nouveau Payment Details a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Payment Details avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Payment Details avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Payment Details {{ id }} ?"
+            },
+            "detail": {
+                "title": "Payment Details"
+            },
+            "orgId": "Org Id",
+            "type": "Type",
+            "number": "Number",
+            "expirationMonth": "Expiration Month",
+            "expirationYear": "Expiration Year",
+            "securityCode": "Security Code",
+            "defaultCard": "Default Card",
+            "cabinet": "Cabinet"
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "name": "Patient",
+    "fields": [
+        {
+            "fieldName": "orgId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "MALE,FEMALE"
+        },
+        {
+            "fieldName": "birthDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "civility",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "profession",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "note",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "patient",
+            "otherEntityName": "contact",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "patient"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "patien",
+            "otherEntityName": "charting",
+            "otherEntityRelationshipName": "patient"
+        },
+        {
+            "relationshipName": "practitioner",
+            "otherEntityName": "practitioner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180820162020",
+    "entityTableName": "patient",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
