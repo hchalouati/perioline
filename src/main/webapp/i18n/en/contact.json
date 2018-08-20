@@ -1,0 +1,30 @@
+
+{
+    "periolineApp": {
+        "contact" : {
+            "home": {
+                "title": "Contacts",
+                "createLabel": "Create a new Contact",
+                "createOrEditLabel": "Create or edit a Contact"
+            },
+            "created": "A new Contact is created with identifier {{ param }}",
+            "updated": "A Contact is updated with identifier {{ param }}",
+            "deleted": "A Contact is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Contact {{ id }}?"
+            },
+            "detail": {
+                "title": "Contact"
+            },
+            "phone1": "Phone 1",
+            "email1": "Email 1",
+            "phone2": "Phone 2",
+            "email2": "Email 2",
+            "streetAddress": "Street Address",
+            "postalCode": "Postal Code",
+            "country": "Country",
+            "city": "City",
+            "stateProvince": "State Province"
+        }
+    }
+}

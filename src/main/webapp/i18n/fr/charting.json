@@ -1,0 +1,25 @@
+
+{
+    "periolineApp": {
+        "charting" : {
+            "home": {
+                "title": "Chartings",
+                "createLabel": "Créer un nouveau Charting",
+                "createOrEditLabel": "Créer ou éditer un Charting"
+            },
+            "created": "Un nouveau Charting a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Charting avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Charting avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Charting {{ id }} ?"
+            },
+            "detail": {
+                "title": "Charting"
+            },
+            "orgId": "Org Id",
+            "notes": "Notes",
+            "date": "Date",
+            "patient": "Patient"
+        }
+    }
+}

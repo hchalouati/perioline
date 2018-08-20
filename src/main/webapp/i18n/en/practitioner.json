@@ -1,0 +1,33 @@
+
+{
+    "periolineApp": {
+        "practitioner" : {
+            "home": {
+                "title": "Practitioners",
+                "createLabel": "Create a new Practitioner",
+                "createOrEditLabel": "Create or edit a Practitioner"
+            },
+            "created": "A new Practitioner is created with identifier {{ param }}",
+            "updated": "A Practitioner is updated with identifier {{ param }}",
+            "deleted": "A Practitioner is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Practitioner {{ id }}?"
+            },
+            "detail": {
+                "title": "Practitioner"
+            },
+            "gender": "Gender",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "birthDate": "Birth Date",
+            "civility": "Civility",
+            "diploma": "Diploma",
+            "photo": "Photo",
+            "signature": "Signature",
+            "cabinet": "Cabinet",
+            "practitioner": "Practitioner",
+            "practitioner": "Practitioner",
+            "practitioner": "Practitioner"
+        }
+    }
+}

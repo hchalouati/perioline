@@ -1,0 +1,77 @@
+{
+    "name": "Practitioner",
+    "fields": [
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "MALE,FEMALE"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "birthDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "civility",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "diploma",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "photo",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        },
+        {
+            "fieldName": "signature",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "cabinet",
+            "otherEntityName": "cabinet",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "practitioner",
+            "otherEntityName": "contact",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "practitioner"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "practitioner",
+            "otherEntityName": "patient",
+            "otherEntityRelationshipName": "practitioner"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "practitioner",
+            "otherEntityName": "cabinet",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "cabinet"
+        }
+    ],
+    "changelogDate": "20180820162024",
+    "entityTableName": "practitioner",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

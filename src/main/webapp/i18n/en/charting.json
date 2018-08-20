@@ -1,0 +1,25 @@
+
+{
+    "periolineApp": {
+        "charting" : {
+            "home": {
+                "title": "Chartings",
+                "createLabel": "Create a new Charting",
+                "createOrEditLabel": "Create or edit a Charting"
+            },
+            "created": "A new Charting is created with identifier {{ param }}",
+            "updated": "A Charting is updated with identifier {{ param }}",
+            "deleted": "A Charting is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Charting {{ id }}?"
+            },
+            "detail": {
+                "title": "Charting"
+            },
+            "orgId": "Org Id",
+            "notes": "Notes",
+            "date": "Date",
+            "patient": "Patient"
+        }
+    }
+}

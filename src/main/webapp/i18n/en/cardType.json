@@ -1,0 +1,9 @@
+{
+    "periolineApp": {
+        "CardType" : {
+            "null": "",
+            "PERSONAL": "PERSONAL",
+            "BUSINESS": "BUSINESS"
+        }
+    }
+}

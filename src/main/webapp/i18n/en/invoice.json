@@ -1,0 +1,27 @@
+
+{
+    "periolineApp": {
+        "invoice" : {
+            "home": {
+                "title": "Invoices",
+                "createLabel": "Create a new Invoice",
+                "createOrEditLabel": "Create or edit a Invoice"
+            },
+            "created": "A new Invoice is created with identifier {{ param }}",
+            "updated": "A Invoice is updated with identifier {{ param }}",
+            "deleted": "A Invoice is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Invoice {{ id }}?"
+            },
+            "detail": {
+                "title": "Invoice"
+            },
+            "orgId": "Org Id",
+            "productName": "Product Name",
+            "date": "Date",
+            "total": "Total",
+            "invoicePDF": "Invoice PDF",
+            "cabinet": "Cabinet"
+        }
+    }
+}

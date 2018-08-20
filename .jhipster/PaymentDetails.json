@@ -1,0 +1,51 @@
+{
+    "name": "PaymentDetails",
+    "fields": [
+        {
+            "fieldName": "orgId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "CardType",
+            "fieldValues": "PERSONAL,BUSINESS"
+        },
+        {
+            "fieldName": "number",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "expirationMonth",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "expirationYear",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "securityCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "defaultCard",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "cabinet",
+            "otherEntityName": "cabinet",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180820162021",
+    "entityTableName": "payment_details",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

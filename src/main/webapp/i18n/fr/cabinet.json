@@ -1,0 +1,31 @@
+
+{
+    "periolineApp": {
+        "cabinet" : {
+            "home": {
+                "title": "Cabinets",
+                "createLabel": "Créer un nouveau Cabinet",
+                "createOrEditLabel": "Créer ou éditer un Cabinet"
+            },
+            "created": "Un nouveau Cabinet a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Cabinet avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Cabinet avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Cabinet {{ id }} ?"
+            },
+            "detail": {
+                "title": "Cabinet"
+            },
+            "orgId": "Org Id",
+            "name": "Name",
+            "activity": "Activity",
+            "website": "Website",
+            "logo": "Logo",
+            "cabinet": "Cabinet",
+            "cabinet": "Cabinet",
+            "cabinet": "Cabinet",
+            "cabinet": "Cabinet",
+            "cabinet": "Cabinet"
+        }
+    }
+}
