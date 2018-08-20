@@ -1,0 +1,98 @@
+entity Patient {
+    orgId String,
+	firstName String,
+    lastName String,
+    gender Gender,
+    birthDate LocalDate,
+    civility String,
+    profession String,
+    note String
+}
+
+entity PaymentDetails{
+    orgId String,
+    type CardType,
+    number String,
+    expirationMonth Integer,
+    expirationYear Integer,
+    securityCode Integer,
+    defaultCard Boolean
+}
+
+entity Invoice{
+    orgId String,
+	productName String,
+    date LocalDate,
+    total Integer,
+    invoicePDF String
+}
+
+entity Cabinet{
+    orgId String,
+    name String,
+    activity String,
+    website String,
+    logo ImageBlob
+}
+
+entity Practitioner {
+    gender Gender
+    firstName String,
+    lastName String,
+    birthDate LocalDate,
+    civility String,
+    diploma String,
+    photo ImageBlob,
+    signature String
+}
+
+entity Contact {
+    phone1 String,
+    email1 String,
+    phone2 String,
+    email2 String,
+    streetAddress String,
+    postalCode String,
+    country String,
+    city String,
+    stateProvince String
+}
+
+entity Charting{
+    orgId String,
+	notes String,
+    date LocalDate
+}
+
+enum Gender{
+ MALE, FEMALE
+}
+
+enum CardType{
+ PERSONAL, BUSINESS
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+	Patient{patient} to Contact,
+    Cabinet{cabinet} to Contact,
+    Practitioner{practitioner} to Contact
+}
+
+relationship OneToMany {
+	Practitioner{practitioner} to Patient,
+    Patient{patien} to Charting,
+    Cabinet{cabinet} to Invoice,
+    Cabinet{cabinet} to Practitioner,
+    Cabinet{cabinet} to PaymentDetails
+}
+
+relationship ManyToMany {
+    Cabinet{cabinet} to Practitioner{practitioner}
+}
+
+// Set pagination options
+paginate Practitioner, Patient, Invoice with pagination
+
+// Set service options to all except few
+service all with serviceImpl except Contact
